@@ -10,12 +10,13 @@ settings--->Version Control--->Git--->配置git.exe文件
 
 
 
-右键点击项目--->git---->add加入临时库--->commit directory允许加入git库
+右键点击项目--->git---->add加入临时库--->commit directory允许文件加入git库
 
+
+右键点击项目--->git--->repository--->push--->Define remote填写仓库地址以及仓库名字（如果出现错误是信任证书原因或网络原因）--->push推送到github
 
 
 
 git 出现 SSL certificate problem: unable to get local issuer certificate
 开始看错了，以为是SSH秘钥的问题，网上查了之后发现是https访问的的证书问题，在Windows下的git窗口里使用命令直接去掉ssl的验证：
-
 git config --global http.sslVerify false
