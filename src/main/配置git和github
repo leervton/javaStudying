@@ -1,4 +1,21 @@
-settings--->Version Control--->Github
-settings--->Version Control--->Git
+配置git和github运行环境
 
-配置VCS---> import into version control--->create git repository--->导入项目
+settings--->Version Control--->Github--->add Count/或使用官网临时令牌token
+        github token：右上角头像-->settings--> Developer settings开发者模式 --->personal access tokens --->generate new token按钮 -->Note随便填写，Expiration令牌生效时长，select scopes下面的全选
+settings--->Version Control--->Git--->配置git.exe文件
+
+
+右键点击项目观察有没有git选项，没有配置vcs
+配置VCS---> import into version control--->create git repository--->导入要上传的项目进入git库中
+
+
+
+右键点击项目--->git---->add加入临时库--->commit directory允许加入git库
+
+
+
+
+git 出现 SSL certificate problem: unable to get local issuer certificate
+开始看错了，以为是SSH秘钥的问题，网上查了之后发现是https访问的的证书问题，在Windows下的git窗口里使用命令直接去掉ssl的验证：
+
+git config --global http.sslVerify false
