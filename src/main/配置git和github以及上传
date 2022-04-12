@@ -10,7 +10,7 @@ settings--->Version Control--->Git--->配置git.exe文件
 
 
 
-右键点击项目--->git---->add加入临时库--->commit directory允许文件加入git库
+右键点击项目--->git---->add加入缓存区临时库--->commit directory允许文件加入git本地库
 
 
 右键点击项目--->git--->repository--->push--->Define remote填写仓库地址以及仓库名字（如果出现错误是信任证书原因或网络原因）--->push推送到github
